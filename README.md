@@ -270,29 +270,6 @@ The application can be useful for:
 - 📖 Educational content
 - 🔎 Topic-focused information retrieval
 
----
-
-## 🖥️ Application Preview
-
-Add screenshots of your application here to showcase the interface and results.
-
-### 📸 Main Interface
-
-_Add your screenshot here._
-
-### 📸 Generated Summaries
-
-_Add your screenshot here._
-
-### 📸 ROUGE / METEOR Evaluation
-
-_Add your screenshot here._
-
-### 📸 Word Cloud Visualization
-
-_Add your screenshot here._
-
----
 
 ## 📁 Project Structure
 
