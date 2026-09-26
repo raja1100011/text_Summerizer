@@ -1,11 +1,12 @@
 streamlit
 transformers
-txtai
+torch
 nltk
 wordcloud
-pandas
 matplotlib
-torch
+numpy
 rouge
+pandas
+txtai
 bcrypt
 PyPDF2
