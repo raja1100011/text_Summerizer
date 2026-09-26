@@ -104,147 +104,216 @@ A word cloud is generated from the resulting summary to provide a quick visual r
         │ ROUGE / METEOR  │     │  Word Cloud    │
         │   Evaluation    │     │ Visualization  │
         └─────────────────┘     └────────────────┘
+```
 
+---
 
-🛠️ Technologies
-Category	Technologies
-🐍 Language	Python
-🌐 Web Framework	Streamlit
-🤖 NLP / Machine Learning	Hugging Face Transformers, BERT, PyTorch
-🧠 NLP Processing	NLTK, WordNet
-📊 Evaluation	ROUGE, METEOR
-📈 Visualization	Matplotlib, WordCloud
-🔢 Numerical Computing	NumPy
-📋 Prerequisites
+## 🛠️ Technologies
+
+| Category | Technologies |
+|---|---|
+| 🐍 Language | Python |
+| 🌐 Web Framework | Streamlit |
+| 🤖 NLP / Machine Learning | Hugging Face Transformers, BERT, PyTorch |
+| 🧠 NLP Processing | NLTK, WordNet |
+| 📊 Evaluation | ROUGE, METEOR |
+| 📈 Visualization | Matplotlib, WordCloud |
+| 🔢 Numerical Computing | NumPy |
+
+---
+
+## 📋 Prerequisites
 
 Before running the project, make sure you have:
 
-Python 3.8 or higher
-pip
-Internet connection for downloading the pretrained BERT model
-⚡ Getting Started
-1️⃣ Clone the Repository
+- **Python 3.8 or higher**
+- **pip**
+- Internet connection for downloading the pretrained BERT model
+
+---
+
+## ⚡ Getting Started
+
+### 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/<your-username>/TextSummarizer.git
-2️⃣ Navigate to the Project
+```
+
+### 2️⃣ Navigate to the Project
+
+```bash
 cd TextSummarizer
-3️⃣ Create a Virtual Environment
+```
+
+### 3️⃣ Create a Virtual Environment
 
 It is recommended to use a virtual environment.
 
-Windows
+#### Windows
+
+```bash
 python -m venv venv
 venv\Scripts\activate
-macOS / Linux
+```
+
+#### macOS / Linux
+
+```bash
 python3 -m venv venv
 source venv/bin/activate
-4️⃣ Install Dependencies
+```
+
+### 4️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-If requirements.txt does not exist, install:
+If `requirements.txt` does not exist, install:
 
+```bash
 pip install streamlit torch transformers nltk rouge matplotlib numpy wordcloud
-📚 NLTK Data
+```
+
+---
+
+## 📚 NLTK Data
 
 The required NLTK resources are downloaded automatically when the application starts.
 
 You can also download them manually:
 
+```bash
 python -c "import nltk; nltk.download('stopwords'); nltk.download('punkt'); nltk.download('wordnet')"
-▶️ Run the Application
+```
+
+---
+
+## ▶️ Run the Application
 
 Start Streamlit with:
 
+```bash
 streamlit run app.py
+```
 
 The application will be available at:
 
+```text
 http://localhost:8501
-🎯 How to Use
-Step 1 — Enter Your Text
+```
 
-Paste or type the document you want to summarize into the Input Text field.
+---
 
-Step 2 — Add a Reference Summary
+## 🎯 How to Use
 
-Provide a reference summary if you want to calculate ROUGE and METEOR scores.
+### Step 1 — Enter Your Text
 
-Step 3 — Choose the Compression Percentage
+Paste or type the document you want to summarize into the **Input Text** field.
+
+### Step 2 — Add a Reference Summary
+
+Provide a reference summary if you want to calculate **ROUGE and METEOR scores**.
+
+### Step 3 — Choose the Compression Percentage
 
 Use the percentage slider to control how much of the original content is retained by the extractive summarizer.
 
-Step 4 — Generate the Summaries
+### Step 4 — Generate the Summaries
 
-Click Summarize.
+Click **Summarize**.
 
 The application generates:
 
-🤖 Extractive summary
-✨ Compressed summary
-🔎 Query-relevant summary
-📊 ROUGE scores
-📈 METEOR score
-☁️ Word cloud visualization
-📊 Evaluation
+- 🤖 Extractive summary
+- ✨ Compressed summary
+- 🔎 Query-relevant summary
+- 📊 ROUGE scores
+- 📈 METEOR score
+- ☁️ Word cloud visualization
+
+---
+
+## 📊 Evaluation
 
 The generated summaries can be compared against a reference summary using two commonly used NLP evaluation metrics.
 
-ROUGE
+### ROUGE
 
 Measures the overlap between the generated summary and the reference summary.
 
-METEOR
+### METEOR
 
 Evaluates similarity between the generated and reference summaries while considering linguistic relationships such as stemming and synonyms.
 
-🔬 Summarization Techniques
-Technique	Approach	Purpose
-🤖 Extractive	BERT sentence scoring	Select important sentences
-✨ Abstractive Compression	WordNet + stopword removal	Compress textual content
-🔎 Interactive	Query-based sentence selection	Focus on a specific topic
-💡 Use Cases
+---
+
+## 🔬 Summarization Techniques
+
+| Technique | Approach | Purpose |
+|---|---|---|
+| 🤖 Extractive | BERT sentence scoring | Select important sentences |
+| ✨ Abstractive Compression | WordNet + stopword removal | Compress textual content |
+| 🔎 Interactive | Query-based sentence selection | Focus on a specific topic |
+
+---
+
+## 💡 Use Cases
 
 The application can be useful for:
 
-📚 Academic research
-📰 News summarization
-📄 Document analysis
-🔬 Research papers
-📖 Educational content
-🔎 Topic-focused information retrieval
-🖥️ Application Preview
+- 📚 Academic research
+- 📰 News summarization
+- 📄 Document analysis
+- 🔬 Research papers
+- 📖 Educational content
+- 🔎 Topic-focused information retrieval
+
+---
+
+## 🖥️ Application Preview
 
 Add screenshots of your application here to showcase the interface and results.
 
-📸 Main Interface
+### 📸 Main Interface
 
-📸 Generated Summaries
+_Add your screenshot here._
 
-📸 ROUGE / METEOR Evaluation
+### 📸 Generated Summaries
 
-📸 Word Cloud Visualization
-📁 Project Structure
+_Add your screenshot here._
+
+### 📸 ROUGE / METEOR Evaluation
+
+_Add your screenshot here._
+
+### 📸 Word Cloud Visualization
+
+_Add your screenshot here._
+
+---
+
+## 📁 Project Structure
+
+```text
 TextSummarizer/
 │
 ├── app.py                 # Main Streamlit application
 ├── requirements.txt       # Python dependencies
 └── README.md              # Project documentation
-👩‍💻 Author
-Raja Aifa
+```
+
+---
+
+## 👩‍💻 Author
+
+**Raja Aifa**
 
 Master's Degree in Web Service and Multimedia
 
-📄 License
+---
+
+## 📄 License
 
 This project is intended for educational and research purposes.
-
-
-**Only change this one thing before pushing it:**
-
-```markdown
-YOUR_DEPLOYMENT_URL
-
-to your actual deployed URL, for example:
-
-https://text-summarizer-xxxxx.streamlit.app
-
-Then your GitHub README will have a proper 🚀 Live Demo button at the top.
